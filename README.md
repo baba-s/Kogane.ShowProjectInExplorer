@@ -1,4 +1,4 @@
-# UniShowProjectInExplorer
+# Kogane Show Project In Explorer
 
 Unity プロジェクトのフォルダをエクスプローラで開くエディタ拡張
 

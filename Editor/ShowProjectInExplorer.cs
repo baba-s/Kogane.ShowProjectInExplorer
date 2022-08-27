@@ -4,12 +4,16 @@ using UnityEditor;
 
 namespace Kogane.Internal
 {
-	internal static class ShowProjectInExplorer
-	{
-		[MenuItem( "File/Show Project in Explorer" )]
-		private static void Show()
-		{
-			Process.Start( Directory.GetCurrentDirectory() );
-		}
-	}
+    internal static class ShowProjectInExplorer
+    {
+#if UNITY_EDITOR_WIN
+        [MenuItem( "File/Show Project in Explorer" )]
+#else
+        [MenuItem( "File/Show Project in Finder" )]
+#endif
+        private static void Show()
+        {
+            Process.Start( Directory.GetCurrentDirectory() );
+        }
+    }
 }

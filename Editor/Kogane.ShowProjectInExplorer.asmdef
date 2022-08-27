@@ -1,5 +1,6 @@
 {
-    "name": "UniShowProjectInExplorer",
+    "name": "Kogane.ShowProjectInExplorer",
+    "rootNamespace": "",
     "references": [],
     "includePlatforms": [
         "Editor"
